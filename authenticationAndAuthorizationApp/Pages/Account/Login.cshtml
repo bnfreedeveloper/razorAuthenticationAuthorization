@@ -1,0 +1,32 @@
+﻿@page
+@model authenticationAndAuthorizationApp.Pages.Account.Login
+@{
+}
+<div class="container border" style="padding:20px">
+    <form method="post">
+        <div class="text-danger" asp-validation-summary="ModelOnly"></div>
+        <div class="form-group row">
+            <div class="col-2">
+                <label asp-for="Accreditation.UserName"></label>
+            </div>
+            <div class="col-5">
+                <input type="text" asp-for="Accreditation.UserName" />
+                 <span class="text-danger" asp-validation-for="Accreditation.UserName"></span>
+            </div>
+        </div>
+        <div class="form-group row">
+            <div class="col-2">
+                <label asp-for="Accreditation.Password"></label>
+            </div>
+            <div class="col-5">
+                <input type="password" asp-for="Accreditation.Password" />
+                 <span class="text-danger" asp-validation-for="Accreditation.Password"></span>
+            </div>
+        </div>
+             <div class="form-group row">
+                 <input type="submit" class="btn-primary btn col-6" value="send" />
+             </div>
+        
+    </form>
+
+</div>
