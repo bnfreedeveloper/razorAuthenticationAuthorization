@@ -23,6 +23,12 @@
                  <span class="text-danger" asp-validation-for="Accreditation.Password"></span>
             </div>
         </div>
+        <div class="row form-check mb-2">
+            <div class="col-2">
+                <input type="checkbox" asp-for="Accreditation.RememberMe" class="form-check-input" />
+                <label class="form-check-label" asp-for="Accreditation.RememberMe"></label>
+            </div>
+        </div>
              <div class="form-group row">
                  <input type="submit" class="btn-primary btn col-6" value="send" />
              </div>
